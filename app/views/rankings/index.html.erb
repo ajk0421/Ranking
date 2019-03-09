@@ -1,0 +1,11 @@
+<h1>2018年オリコンチャートベスト20</h1>
+
+<% @rankings.each do |ranking| %>
+  <h4><%= ranking.id %>位:<%= ranking.title %>(<%= ranking.artist_name %>)</h4>
+<% end %>
+
+<h1>チャートインアーティスト</h1>
+
+<% @artists.each do |artist| %>
+  <h4><%= artist.artist_name %></h4>
+<% end %>
